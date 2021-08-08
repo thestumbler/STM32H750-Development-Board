@@ -14,10 +14,9 @@ Briefly,
   - `$ make BOARD=ALIMAN_H750 clean`
   - `$ make BOARD=ALIMAN_H750`
 * Connect the H750 Demo board by USB, and boot it up in DFU mode
-  - jumper BOOT0 pin and `3.3V` pin during CPU reset
+  - jumper `BOOT0` pin and `3.3V` pin during CPU reset
 * Install Micropython to the demo board:
   - `$ make BOARD=ALIMAN_H750 deploy`
-
 
 ## Connect to the Board
 
@@ -49,7 +48,7 @@ You should see the following output:
 ```
 >>> import aliman
    flash: 15 MiB  (size)   15 MiB  (free)
-      sd: 29 MiB  (size)   29 MiB  (free)
+      sd: 29 GiB  (size)   29 GiB  (free)
 cpu freq: 480.0 MHz
  sysname: pyboard
 nodename: pyboard
@@ -63,6 +62,7 @@ Aliman STM32H750 Demo Board, The End.
 
 This shows the following points:
 * U3 W25Q128W16 is active and providing 16 MB flash drive
+* SD card recognized, if one is inserted
 * CPU clock speed is configured correctly at 480 MHz
 * LED output D5 operational
 * TBD: serial port tests
