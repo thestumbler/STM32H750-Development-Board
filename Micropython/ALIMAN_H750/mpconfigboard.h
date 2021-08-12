@@ -6,7 +6,7 @@
 #define MICROPY_HW_HAS_SWITCH       (0)		// no user switches except RESET
 #define MICROPY_HW_HAS_FLASH        (1)
 #define MICROPY_HW_ENABLE_RNG       (1)
-#define MICROPY_HW_ENABLE_RTC       (0)
+#define MICROPY_HW_ENABLE_RTC       (1)
 #define MICROPY_HW_ENABLE_DAC       (1)
 #define MICROPY_HW_ENABLE_USB       (1)
 #define MICROPY_HW_ENABLE_SDCARD    (1)		// it has a sd scard, but no detect pin
